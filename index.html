@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhartha Gurram - Full Stack Software Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 py-4 bg-bg-primary transition-all duration-300">
+        <div class="custom-container flex justify-between items-center">
+            <!-- Logo with Cursive Name -->
+            <div class="flex items-center">
+                <span class="cursive-name text-accent-light text-2xl sm:text-3xl">Siddhartha Gurram</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-10">
+                <a href="#about" class="text-dark font-bold hover:text-accent transition">About</a>
+                <a href="#skills" class="text-dark font-bold hover:text-accent transition">Skills</a>
+                <a href="#experience" class="text-dark font-bold hover:text-accent transition">Experience</a>
+                <a href="#projects" class="text-dark font-bold hover:text-accent transition">Projects</a>
+                <a href="#contact" class="text-dark font-bold hover:text-accent transition">Contact</a>
+            </div>
+
+            <!-- Hire Me Button -->
+            <a href="#contact"
+                class="hidden md:block btn-accent px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition">
+                Hire Me
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-light">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="md:hidden bg-white shadow-lg absolute top-full left-0 w-full hidden">
+            <div class="flex flex-col py-4">
+                <a href="#about"
+                    class="px-6 py-3 font-semibold text-dark hover:bg-gray-100 hover:text-accent transition">About</a>
+                <a href="#skills"
+                    class="px-6 py-3 font-semibold text-dark hover:bg-gray-100 hover:text-accent transition">Skills</a>
+                <a href="#experience"
+                    class="px-6 py-3 font-semibold text-dark hover:bg-gray-100 hover:text-accent transition">Experience</a>
+                <a href="#projects"
+                    class="px-6 py-3 font-semibold text-dark hover:bg-gray-100 hover:text-accent transition">Projects</a>
+                <a href="#contact"
+                    class="px-6 py-3 font-semibold text-dark hover:bg-gray-100 hover:text-accent transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="min-h-screen flex items-center justify-center bg-gradient-to-br from-bg-primary to-bg-secondary pt-20 pb-16">
+        <div class="custom-container text-center">
+
+            <div class="text-5xl md:text-6xl text-accent font-bold mb-2">
+                Hey, I am
+            </div>
+
+            <h1 class="text-6xl md:text-7xl text-light font-bold mb-4">
+                Siddhartha Gurram
+            </h1>
+
+            <h2 class="text-2xl md:text-3xl font-semibold text-accent mb-6">
+                Full Stack Developer
+            </h2>
+
+            <p class="text-lg md:text-xl text-muted max-w-2xl mx-auto mb-8">
+                3+ years experience Software Developer passionate about building scalable web applications,
+                microservices, and real-time APIs using Python, Node.js, Java, and cloud technologies.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#projects" class="btn-accent px-8 py-3 rounded-lg shadow-lg hover:scale-105 transition">
+                    View Work
+                </a>
+                <a href="/images/SiddharthaG_Resume.pdf" download
+                    class="px-8 py-3 border border-accent text-accent rounded-lg shadow-lg hover:bg-accent hover:text-bg-light transition">
+                    My Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="custom-container">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title mx-auto">About Me</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                    Software Developer with 3+ years of experience building scalable fintech and marketplace platforms.
+                    Skilled in Python, Node.js, Java, Kafka, PostgreSQL, and cloud platforms (AWS, Azure).
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-10">
+                    Expertise in developing microservices, real-time APIs (GraphQL, gRPC), and CI/CD automation. Focused
+                    on creating secure, high-performance, and data-driven applications.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-10">Master’s in Computer Science from the University
+                    of North Texas, USA (May 2024).
+                </p>
+
+                <!-- Professional Experience & Education Badges -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+                    <!-- Experience Badge -->
+                    <div class="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-5 shadow-sm">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-briefcase text-blue-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-blue-800">3+ Years Experience</h3>
+                        </div>
+                        <p class="text-sm text-blue-700">Proven expertise in developing high-performance fintech and
+                            marketplace platforms.</p>
+                    </div>
+
+                    <!-- Projects Badge -->
+                    <div class="bg-green-50 border-l-4 border-green-500 rounded-lg p-5 shadow-sm">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-green-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-project-diagram text-green-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-green-800">Scalable Solutions</h3>
+                        </div>
+                        <p class="text-sm text-green-700">Designed and deployed secure, low-latency web and API-based
+                            applications.</p>
+                    </div>
+
+                    <!-- Cloud Badge -->
+                    <div class="bg-purple-50 border-l-4 border-purple-500 rounded-lg p-5 shadow-sm">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-purple-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-cloud text-purple-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-purple-800">Cloud & DevOps</h3>
+                        </div>
+                        <p class="text-sm text-purple-700">Hands-on experience with AWS, Azure, Terraform, and CI/CD
+                            automation.</p>
+                    </div>
+
+                    <!-- Microservices Badge -->
+                    <div class="bg-blue-100 border-l-4 border-yellow-500 rounded-lg p-5 shadow-sm">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-code-branch text-orange-800 text-lg"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-orange-800">Microservices Architecture</h3>
+                        </div>
+                        <p class="text-sm text-orange-700">Built event-driven, distributed systems using Python, Java,
+                            Kafka, and PostgreSQL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 gradient-bg">
+        <div class="custom-container">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title mx-auto">Technical Skills</h2>
+
+            <!-- Programming Languages -->
+            <h3 class="text-xl font-semibold mb-6 text-gray-700 mt-12">Programming Languages</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/python-5.svg" alt="Python" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Python</h3>
+                </div>
+
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/java-4.svg" alt="Java" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Java</h3>
+                </div>
+            </div>
+
+            <!-- Frontend Development -->
+
+            <h3 class="text-xl font-semibold mb-6 text-gray-700 mt-12">Frontend Development</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+
+                <!-- HTML -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/html-1.svg" alt="HTML" class="w-14 h-14 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">HTML</h3>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/css-3.svg" alt="CSS" class="w-14 h-14 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">CSS</h3>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/javascript-1.svg" alt="JavaScript" class="w-14 h-14 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">JavaScript</h3>
+                </div>
+
+                <!-- React.js -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/react-2.svg" alt="React.js" class="w-14 h-14 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">React.js</h3>
+                </div>
+
+                <!-- Vaadin -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/Vaadin_idHh2skZF-_0.png" alt="Vaadin" class="w-24 h-16 object-scale-down">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Vaadin</h3>
+                </div>
+
+                <!-- JavaFX -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/JavaFX_Logo.png" alt="JavaFX" class="w-24 h-16 object-scale-down">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">JavaFX</h3>
+                </div>
+
+                <!-- D3.js -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/d3-black.svg" alt="D3.js" class="w-14 h-14 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">D3.js</h3>
+                </div>
+
+                <!-- React Router -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/rr_lockup_light.png" alt="React Router" class="w-24 h-16 object-scale-down">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">React Router</h3>
+                </div>
+
+                <!-- Figma -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/figma-icon.svg" alt="Figma" class="w-24 h-16 object-scale-down">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Figma</h3>
+                </div>
+
+            </div>
+
+            <!-- Backend & API Development -->
+            <h3 class="text-xl font-semibold mb-6 text-gray-700 mt-12">Backend & API Development</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+
+                <!-- FastAPI -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/fastapi-1.svg" alt="FastAPI" class="w-14 h-14 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">FastAPI</h3>
+                </div>
+
+                <!-- Celery -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/celery.png" alt="Celery" class="w-[120px] h-[120px] scale-150 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Celery</h3>
+                </div>
+
+                <!-- SQLAlchemy -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/sqlalchemy.svg" alt="SQLAlchemy"
+                            class="w-[130px] h-[90px] scale-150 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">SQLAlchemy</h3>
+                </div>
+
+                <!-- Express.js -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/ExpressJS_id74npXgk8_0.png" alt="Express.js"
+                            class="w-[130px] h-[90px] scale-150 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Express.js</h3>
+                </div>
+
+
+                <!-- Node.js -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/nodejs-1.svg" alt="Node.js" class="w-[70px] h-[70px] object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Node.js</h3>
+                </div>
+
+                <!-- GraphQL -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/graphql-logo-2.svg" alt="GraphQL" class="w-[80px] h-[60px] object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">GraphQL</h3>
+                </div>
+
+                <!-- GraphQL -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/grpc-icon-color.png" alt="gRPC"
+                            class="w-[130px] h-[100px] scale-150 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">gRPC</h3>
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Databases & Caching -->
+            <h3 class="text-xl font-semibold mb-6 text-gray-700 mt-12">Databases & Caching</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/PostgresSQL.png" alt="PostgresSQL" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">PostgresSQL</h3>
+                </div>
+                <!-- TimescaleDB -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/logo-black.svg" alt="TimescaleDB"
+                            class="w-[90px] h-[90px] scale-[1.8] object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">TimescaleDB</h3>
+                </div>
+
+                <!-- MongoDB -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div
+                        class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="/images/mongodb-icon-2.svg" alt="MongoDB"
+                            class="w-[85px] h-[85px] scale-[1.8] object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">MongoDB</h3>
+                </div>
+
+
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/redis.svg" alt="Redis" class="w-24 h-16">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Redis</h3>
+                </div>
+            </div>
+
+            <!-- Cloud Platforms -->
+            <h3 class="text-xl font-semibold mb-6 text-gray-700 mt-12">Cloud Platforms</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/prometheus.svg" alt="Prometheus" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Prometheus</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/grafana.svg" alt="Grafana" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Grafana</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/iam.png" alt="IAM" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">IAM</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/aws-codepipeline.png" alt="AWS CodePipeline" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">AWS CodePipeline</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/key-vault.png" alt="AWS Key Vault" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">AWS Key Vault</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/application-insights.png" alt="AWS Application Insights" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">AWS Application Insights</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/AWS.png" alt="AWS" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">AWS</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/azure-2.svg" alt="Azure" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Azure</h3>
+                </div>
+            </div>
+
+            <!-- DevOps & CI/CD -->
+            <h3 class="text-xl font-semibold mb-6 text-gray-700 mt-12">DevOps & CI/CD</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/HashiCorp Terraform.svg" alt="HashiCorp Terraform" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">HashiCorp Terraform</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/Azure Devops.png" alt="Azure DevOps" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Azure DevOps</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/Git.png" alt="Git" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Git</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/github-icon-1.svg" alt="GitHub" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">GitHub</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/sonarqube-1.svg" alt="SonarQube" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">SonarQube</h3>
+                </div>
+            </div>
+
+            <!-- Authentication & Security -->
+            <h3 class="text-xl font-semibold mb-6 text-gray-700 mt-12">Authentication & Security</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/jwt-seeklogo.png" alt="JWT" class="w-20 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">JWT</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/oauth.svg" alt="OAuth" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">OAuth</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/OpenID_logo.svg.png" alt="OpenID" class="w-30 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">OpenID</h3>
+                </div>
+            </div>
+
+            <!-- Testing & Monitoring -->
+            <h3 class="text-xl font-semibold mb-6 text-gray-700 mt-12">Testing & Monitoring</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
+                        <img src="images/pytest.png" alt="Pytest" class="w-20 h-24">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Pytest</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/jmeter-seeklogo.png" alt="JMeter" class="w-30 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">JMeter</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/unittest.png" alt="Unit Test" class="w-50 h-30">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Unit Test</h3>
+                </div>
+            </div>
+
+            <!-- Visualization & Reporting -->
+            <h3 class="text-xl font-semibold mb-6 text-gray-700 mt-12">Visualization & Reporting</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/power-bi.svg" alt="Power BI" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Power BI</h3>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
+                        <img src="/images/tableau-software.svg" alt="Tableau" class="w-10 h-10">
+                    </div>
+                    <h3 class="font-semibold text-lg text-center">Tableau</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="custom-container">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title mx-auto">Professional Experience</h2>
+
+            <div class="max-w-3xl mx-auto">
+
+                <!-- Addepar -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-bold">Software Developer</h3>
+                    <p class="text-accent font-semibold">Addepar | Remote, USA</p>
+                    <p class="text-gray-500 mb-4">July 2024 – Present</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Developing a Multi-Asset Robo-Advisory platform using GraphQL APIs for real-time portfolio
+                            management.</li>
+                        <li>Architected event-driven microservices with FastAPI, Kafka, and gRPC to process 500K+ daily
+                            transactions.</li>
+                        <li>Optimized PostgreSQL & TimescaleDB for 40% lower query latency and 99.98% data availability.
+                        </li>
+                        <li>Built real-time UI components with Java (Vaadin) & WebSockets for instant portfolio updates.
+                        </li>
+                        <li>Automated deployments using AWS CodePipeline & Terraform, achieving 85% fewer release
+                            failures.</li>
+                    </ul>
+                </div>
+
+                <!-- LTIMindtree -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-bold">Software Developer</h3>
+                    <p class="text-accent font-semibold">LTIMindtree | Hyderabad, India</p>
+                    <p class="text-gray-500 mb-4">January 2021 – August 2022</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Designed and developed a scalable Multi-Vendor Marketplace platform with microservices
+                            architecture.</li>
+                        <li>Built reusable UI components using JSP, Servlets, and JavaFX to improve load time and
+                            engagement by 40%.</li>
+                        <li>Developed FastAPI and Celery-based services with Kafka for asynchronous, fault-tolerant data
+                            processing.</li>
+                        <li>Enhanced PostgreSQL performance using indexing, partitioning, and Redis caching (60% faster
+                            queries).</li>
+                        <li>Automated CI/CD pipelines via Azure DevOps & Terraform with zero-downtime blue-green
+                            deployments.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 gradient-bg">
+        <div class="custom-container">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title mx-auto">Projects</h2>
+
+            <!-- Responsive grid: 1 column on mobile, 2 on tablet and above -->
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
+
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <a href="#" target="_blank" class="block h-full">
+                            <div
+                                class="h-full bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center cursor-pointer">
+                                <i class="fas fa-utensils text-white text-5xl"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Food Recipe App</h3>
+                            <p class="text-gray-700 mb-4">
+                                Built a MERN stack app to create, edit, and search recipes with image uploads (Multer),
+                                Axios for API calls, and MongoDB for data storage.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">React</span>
+                                <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Node.js</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Express</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">MongoDB</span>
+                                <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Multer</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Axios</span>
+                                <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">React
+                                    Router</span>
+
+
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 mt-4">
+                            <a href="#"
+                                class="btn-primary flex items-center justify-center text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
+                                <i class="fas fa-external-link-alt mr-2"></i> View Project
+                            </a>
+                            <a href="#"
+                                class="btn-code flex items-center justify-center text-gray-700 border border-gray-300 hover:border-blue-500 hover:text-blue-600 px-4 py-2 rounded-lg transition-colors">
+                                <i class="fab fa-github mr-2"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <a href="#" target="_blank" class="block h-full">
+                            <div
+                                class="h-full bg-gradient-to-r from-indigo-400 to-indigo-600 flex items-center justify-center cursor-pointer">
+                                <i class="fas fa-database text-white text-5xl"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Global Socio-Economic Visualization</h3>
+                            <p class="text-gray-700 mb-4">
+                                Built interactive dashboards combining datasets on population, blood types, and GDP
+                                using Tableau, Power BI, and d3.js.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Tableau</span>
+                                <span class="bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">Power BI</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">d3.js</span>
+                                <span class="bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">HTML</span>
+                                <span class="bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">CSS</span>
+                                <span
+                                    class="bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">JavaScript</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">Figma</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 mt-4">
+                            <a href="#"
+                                class="btn-primary flex items-center justify-center text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
+                                <i class="fas fa-external-link-alt mr-2"></i> View Project
+                            </a>
+                            <a href="#"
+                                class="btn-code flex items-center justify-center text-gray-700 border border-gray-300 hover:border-blue-500 hover:text-blue-600 px-4 py-2 rounded-lg transition-colors">
+                                <i class="fab fa-github mr-2"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <a href="#" target="_blank" class="block h-full">
+                            <div
+                                class="h-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center cursor-pointer">
+                                <i class="fas fa-book text-white text-5xl"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Library Management System</h3>
+                            <p class="text-gray-700 mb-4">
+                                Developed a responsive web app for managing books and users with borrow/return
+                                functionality and input validation.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">HTML</span>
+                                <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">CSS</span>
+                                <span class="bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">JavaScript</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Unit</span>
+                                <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Functional
+                                    Testing</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 mt-4">
+                            <a href="#"
+                                class="btn-primary flex items-center justify-center text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
+                                <i class="fas fa-external-link-alt mr-2"></i> View Project
+                            </a>
+                            <a href="#"
+                                class="btn-code flex items-center justify-center text-gray-700 border border-gray-300 hover:border-blue-500 hover:text-blue-600 px-4 py-2 rounded-lg transition-colors">
+                                <i class="fab fa-github mr-2"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <a href="#" target="_blank" class="block h-full">
+                            <div
+                                class="h-full bg-gradient-to-r from-pink-400 to-pink-600 flex items-center justify-center cursor-pointer">
+                                <i class="fas fa-concierge-bell text-white text-5xl"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Restaurant Ordering System</h3>
+                            <p class="text-gray-700 mb-4">
+                                Developed a real-time restaurant ordering system using Node.js, Express, and WebSockets
+                                for live kitchen updates.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Node.js</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Express.js</span>
+                                <span
+                                    class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">WebSockets</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">HTML</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">CSS</span>
+                                <span
+                                    class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">JavaScript</span>
+                                <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 mt-4">
+                            <a href="#"
+                                class="btn-primary flex items-center justify-center text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
+                                <i class="fas fa-external-link-alt mr-2"></i> View Project
+                            </a>
+                            <a href="#"
+                                class="btn-code flex items-center justify-center text-gray-700 border border-gray-300 hover:border-blue-500 hover:text-blue-600 px-4 py-2 rounded-lg transition-colors">
+                                <i class="fab fa-github mr-2"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="custom-container">
+            <h2 class="text-4xl font-bold text-center mb-16 section-title mx-auto text-gray-800">Get In Touch</h2>
+
+            <div class="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
+                <!-- Contact Information Column -->
+                <div class="lg:w-2/5">
+                    <h3 class="text-2xl font-semibold mb-8 text-gray-800">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div
+                            class="flex items-center info-card p-4 rounded-xl bg-gray-50 hover:shadow-md transition-all">
+                            <div class="bg-blue-100 p-4 rounded-full mr-4">
+                                <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-600">Email</p>
+                                <a href="mailto:Siddharth@workwebmail.com"
+                                    class="text-gray-800 hover:text-blue-600 font-semibold">Siddharth@workwebmail.com</a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center info-card p-4 rounded-xl bg-gray-50 hover:shadow-md transition-all">
+                            <div class="bg-blue-100 p-4 rounded-full mr-4">
+                                <i class="fas fa-phone text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-600">Phone</p>
+                                <a href="tel:+19408433334" class="text-gray-800 hover:text-blue-600 font-semibold">
+                                    (940)-843-0660</a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center info-card p-4 rounded-xl bg-gray-50 hover:shadow-md transition-all">
+                            <div class="bg-blue-100 p-4 rounded-full mr-4">
+                                <i class="fab fa-linkedin-in text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-600">LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/siddhartha29/" target="_blank"
+                                    class="text-gray-800 hover:text-blue-600 font-semibold">linkedin.com/in/siddhartha29</a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center info-card p-4 rounded-xl bg-gray-50 hover:shadow-md transition-all">
+                            <div class="bg-blue-100 p-4 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-600">Location</p>
+                                <p class="text-gray-800 font-semibold">Dallas, TX</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/siddhartha-gurram" target="_blank"
+                                class="social-icon bg-gray-100 hover:bg-blue-600 hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition-all shadow-md">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/siddhartha29/" target="_blank"
+                                class="social-icon bg-gray-100 hover:bg-blue-600 hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition-all shadow-md">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="lg:w-3/5">
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-8 text-gray-800">Send a Message</h3>
+
+                        <!-- Formspree AJAX Form -->
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2 font-medium">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your full name" required
+                                        class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2 font-medium">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your email address"
+                                        required
+                                        class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-gray-700 mb-2 font-medium">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this regarding?"
+                                    required
+                                    class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2 font-medium">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your message here..."
+                                    required
+                                    class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+
+                            <!-- Status Message -->
+                            <p id="formStatus" class="hidden text-center text-sm font-medium"></p>
+
+                            <button type="submit"
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg shadow-md w-full font-semibold text-lg mt-4 transition-all">
+                                <i class="fas fa-paper-plane mr-2"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="custom-container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+                <!-- Brand Column -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center">
+                        Siddhartha Gurram
+                    </h3>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Data Engineer & Software Developer passionate about creating efficient data solutions and
+                        innovative applications.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/siddhartha29/" target="_blank"
+                            class="bg-gray-800 hover:bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="https://github.com/siddhartha-gurram" target="_blank"
+                            class="bg-gray-800 hover:bg-gray-700 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 pb-2 border-b border-gray-700">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+                        </li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Technologies -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 pb-2 border-b border-gray-700">Technologies</h4>
+                    <ul class="space-y-3">
+                        <li><span class="text-gray-400">Azure</span></li>
+                        <li><span class="text-gray-400">Python</span></li>
+                        <li><span class="text-gray-400">Node.js</span></li>
+                        <li><span class="text-gray-400">React</span></li>
+                        <li><span class="text-gray-400">Java</span></li>
+                        <li><span class="text-gray-400">JavaScript</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2023 <span class="text-white font-medium">Siddhartha Gurram</span>. All rights reserved.
+                </p>
+                <p class="text-gray-500 text-sm mt-2">
+                    Designed and built with ❤️
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

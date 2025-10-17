@@ -1,0 +1,219 @@
+:root {
+    --primary: #2563eb;
+    /* Professional blue instead of orange */
+    --primary-light: #3b82f6;
+    /* Lighter blue */
+    --accent: #f59e0b;
+    /* Keeping orange as accent */
+    --accent-light: #fbbf24;
+    /* Lighter accent */
+    --bg-primary: #f9fafb;
+    /* Light gray background */
+    --bg-secondary: #ffffff;
+    /* White */
+    --text-dark: #1f2937;
+    /* Dark gray for text */
+    --text-light: #6b7280;
+    /* Medium gray for secondary text */
+    --text-muted: #9ca3af;
+    /* Muted text */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cursive-name {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.hero-heading {
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+}
+
+/* Smooth animation for mobile menu */
+#mobile-menu {
+    transition: transform 0.3s ease-out, opacity 0.3s ease;
+    transform-origin: top;
+}
+
+#mobile-menu.hidden {
+    opacity: 0;
+    transform: scaleY(0);
+    display: none;
+}
+
+#mobile-menu:not(.hidden) {
+    opacity: 1;
+    transform: scaleY(1);
+    display: block;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-primary);
+}
+
+.bg-bg-primary {
+    background-color: var(--bg-primary);
+}
+
+.bg-bg-secondary {
+    background-color: var(--bg-secondary);
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.text-light {
+    color: var(--text-dark);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-light);
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: var(--accent-light);
+}
+
+.hero-icon {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.custom-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.skill-card,
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-input {
+    border: 1px solid #e5e7eb;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    outline: none;
+}
+
+.nav-scroll {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    border-left: 2px solid var(--primary);
+    margin-left: 1rem;
+}
+
+.timeline-item:last-child {
+    border-left: 2px solid transparent;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary);
+}
